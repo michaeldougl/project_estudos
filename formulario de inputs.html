@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LANCHERIA </h1>
+    <FORM method="post" action="teste.jsp"> <!--FORM abertura de um formulario
+        ACTION defini para onde sera enviado este formulario, nesse caso foi para um teste
+        METHOD define o metedo que vai aparecer a pagina
+        POST nao ira mostrar o conteuno na pagina caso apresente erro e se a pagina nao estiver no ar vai aparecer a msg de erro-->
+      Nome:  <input type="text" name="nome"> <br>
+      Email: <input type="email" nome="email"> <br>
+      Tamanho:
+      <!--RADIO define qual eu quero selecionar no tamanho em circulo-->
+       <input type="radio" name="tamanho" value="g"> Grande
+       <input type="radio" name="tamanho" value="m"> Médio
+       <input type="radio" name="tamanho" value="p"> Pequena 
+       <br>
+       <br>
+
+        <select name="sabor"> <!--SELECT será a caixa de seleção-->
+            <!--OPTION ira definir uma caixa de seleção com o que deve ser selecionado-->
+            <option>Calabresa</option>
+            <option>Coração</option>
+            <option>Frango</option>
+            <option>Bacon</option>
+        </select> 
+        <br>
+        Bordas
+        <!--INPUT define o qual comando sera feito
+        TYPE define o tipo de comando 
+        CHECKBOX define que é um botao quadrado de marcar e desmarcar
+        VALUE define se é verdadeiro ao que foi pedido-->
+        <input type="checkbox" nome="borda" value="sim"> Sim
+        <input type="checkbox" nome="queijo" value="sim"> Queijo extra
+        <br>
+        <br>
+        Data de Entrega: <input type="date" nome="dataentrega">
+        <br>
+        <!-- o TEXTAREA realiza uma caixa para escrever e colocar uma mensagem 
+         NAME é para identificar o nome desse campo
+         ROWS é a quantidade de letras 
+         COLS é a quantidade de colunas-->
+        Comentarios:<BR>
+             <textarea name="mensagem" rows="10" cols="20"></textarea>
+        <br>
+            <input type="submit"> <!--botao de enviar o formulario-->
+
+    </FORM>
+
+
+
+
+</body>
+</html>
